@@ -1,0 +1,129 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    text-align: center;
+    font-family: sans-serif;
+    min-height: 100vh;
+    color: #252525;
+    background-color: #fcfcfc;
+    font-weight: 300;
+    display: grid;
+    justify-content: center;
+}
+
+
+main{
+    display: grid;
+    align-items: center;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.mainTitle{
+    font-size: 1.5em;
+    width: 80%;
+}
+
+.main_form{
+    display: grid;
+    gap: 0.6em;
+    justify-items: center;
+}
+
+input{
+    all: unset;
+    padding: 0.5em 0.8em;
+    width: 80%;
+    border: 1px solid lightgreen;
+    text-align: start;
+    color: #131313;
+}
+
+.mainErrorPrompt{
+    color: red;
+    font-weight: 700;
+    font-size: 1em;
+    display: none;
+}
+
+button:not(.main-form-submit-btn){
+    all: unset;
+    border-radius: 50%;
+    background-color: lightgreen;
+    width: 60px;
+    height: 60px;
+    transition: all 0.5s ease;
+}
+
+.main-form-submit-btn{
+    all: unset;
+    width: 30em;
+    background: lightgreen;
+    padding: 0.7em 0;
+    transition: all 0.5s ease;
+}
+
+button:active{
+    transform: scale(.95) translateY(5px);
+    filter: brightness(90%);
+}
+
+.mainScoreboardWrapper{
+    width: 100%;
+    display: grid;
+    justify-items: center;
+    gap: 1em;
+}
+
+.mainScoreboard{
+    width: 90%;
+    display: grid;
+    justify-items: center;
+    gap: 0.3em;
+    background: lightgreen;
+    text-transform: uppercase;
+    padding: 1em 0;
+}
+
+.mainPayername{
+    font-weight: 400;
+}
+
+.mainTimeStamp{
+    color: #686868;
+    font-size: .8em;
+}
+
+.mainScoreOps{
+    margin: 1em;
+    display: flex;
+    gap: 0.5em;
+}
+
+@media (min-width:35.25em){
+    .mainTitle{
+        font-size: 2.5rem;
+        font-weight: 500;
+        font-variant: small-caps;
+    }
+
+    .main_form{
+        display: flex;
+    }
+
+    .mainScoreboard{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .input{
+        width: 10em;
+    }
+}
